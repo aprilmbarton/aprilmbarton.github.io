@@ -1,52 +1,9 @@
-.active a:link { background-color: #FCFCFC;}
-nav {
-        top: 0px;   
-    }
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    nav>ul li {
-        position: relative; 
-        text-align: center;
-        font-weight: bold;
-        color: #560183;
-        float: left;
-    }
-    nav a {
-        text-decoration: none;
+        ul li {
         display: inline-block;
-        border: 2px solid #560183;
-        padding: 15px 15px 15px 15px;
-        width: 150px; 
-        margin: 2px;
-    }
-    
-    
-    nav a:link{
-        background-color: lightgray;
-    }
-    nav a:hover, nav a:focus {
-        background-color: rgb(250, 223, 245);
-    }
-    nav a:active{
-        background-color: FCFCFC;
-    }
-    
-    
-    nav ul>li ul {
-        position: absolute;
-        top: 100%;
-        display: none;
-    }
-    nav ul ul li {
-        float:none;
-    }
-    
-    
-    nav>ul>li:hover>ul{
-        display: block;
-    }
-
-    
+        border: 3px solid black;
+        width: 150px;
+        list-style-type: none;
+        padding: 15px 15px 15px 25px;
+        margin-top: 0;
+        margin-left: 10px;
+        }
