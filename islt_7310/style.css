@@ -4,3 +4,8 @@ header {
     vertical-align:center ;
 }
 h3 {color: #560183}
+
+.hangingindent {
+    padding-left: 40px ;
+    text-indent: -22px ;
+  }
