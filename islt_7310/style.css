@@ -12,12 +12,13 @@ h3 {color: #560183}
     text-indent: -22px ;
   }
 
-  @media (min-width: 700px) {
+  @media all and (min-width: 992px) { 
     .grid {
-      grid-template-areas: 
-     'item1'
-     'item2'
-     'item3';
+      grid-template-areas:
+        'item1'
+        'item2'
+        'item3';
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     }
   }
 
