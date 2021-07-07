@@ -12,15 +12,7 @@ h3 {color: #560183}
     text-indent: -22px ;
   }
 
-  @media only screen and (min-width: 500px) { 
-    .grid {
-      grid-template-areas:
-        'item1'
-        'item2'
-        'item3';
-    }
-  }
-
+  
   .grid {
     display: grid;
     grid-template-columns: 17% 80%;
@@ -45,3 +37,11 @@ h3 {color: #560183}
 
   }
   
+  @media only screen and (min-width: 600px) { 
+    .grid {
+      grid-template-areas:
+        'item1'
+        'item2'
+        'item3';
+         }
+  }
