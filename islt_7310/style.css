@@ -13,32 +13,28 @@ h3 {color: #560183}
   }
 
   @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
+    .grid {
+     'item1'
+     'item2'
+     'item3';
     }
   }
 
-  * {
-    box-sizing: border-box;
+  .grid {
+    display: grid;
+    grid-template-columns: 17% 80%;
+    grid-template-rows: 300px 300px;
+    gap: 5px;
   }
   
-  .column {
-    float: left;
-    padding: 10px;
-    height: 300px; 
+  .item1 {
+  
   }
   
-  .left {
-    width: 20%;
+  .item2 {
+  
+  }
+  .item3 {
+
   }
   
-  .right {
-    width: 75%;
-  }
-  
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
