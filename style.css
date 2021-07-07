@@ -1,0 +1,47 @@
+h1 {color: #560183; text-align: center
+}
+
+header {
+    display: inline;
+    vertical-align:center ;
+}
+h3 {color: #560183}
+
+.hangingindent {
+    padding-left: 40px ;
+    text-indent: -22px ;
+  }
+
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 17% 80%;
+    grid-template-rows: 300px 300px;
+    gap: 5px;
+  }
+  .grid {
+  grid-template-areas: 
+  'item1'
+  'item2'
+  'item3';
+}
+
+  .item1 {
+  
+  }
+  
+  .item2 {
+  
+  }
+  .item3 {
+
+  }
+  
+  @media only screen and (min-width: 600px) { 
+    .grid {
+      grid-template-areas:
+        'item1'
+        'item2'
+        'item3';
+         }
+  }
