@@ -37,7 +37,7 @@ h3 {color: #560183}
 
   }
   
-  @media only screen and (min-width: 600px) { 
+  @media (min-width: 600px) { 
     .grid {
       grid-template-areas:
         'item1'
