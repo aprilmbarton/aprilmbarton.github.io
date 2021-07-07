@@ -1,0 +1,38 @@
+h1 {color: #560183; text-align: center
+}
+
+header {
+    display: inline;
+    vertical-align:center ;
+}
+h3 {color: #560183}
+
+.hangingindent {
+    padding-left: 40px ;
+    text-indent: -22px ;
+  }
+
+  @media screen and (max-width: 600px) {
+    .grid {
+      width: 100%;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 17% 80%;
+    grid-template-rows: 300px 300px;
+    gap: 5px;
+  }
+  
+  .item1 {
+  
+  }
+  
+  .item2 {
+  
+  }
+  .item3 {
+
+  }
+  
