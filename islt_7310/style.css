@@ -44,7 +44,7 @@ h3 {color: #560183}
     justify-self: center;
   }
   
-  @media screen and (max-width:500) {
+  @media screen and (max-width:500px) {
     .grid {
      font-size: larger;
     }
