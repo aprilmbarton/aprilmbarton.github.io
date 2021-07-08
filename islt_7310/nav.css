@@ -34,7 +34,6 @@ nav ul li ul{
 
 nav ul li:hover ul{
     display: block;
-   
 }
 
 nav ul li ul li {
@@ -101,7 +100,7 @@ nav ul li ul li a:hover {
                 margin-bottom: 2px;
             }
             nav .lastMobile {
-                border-bottom: 3px soild black;
+                border-bottom: 3px black;
             }   
             nav ul li ul {       
                  display:none;    }}
