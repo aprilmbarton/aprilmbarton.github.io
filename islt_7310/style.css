@@ -13,9 +13,9 @@ h3 {color: #560183}
     text-indent: -22px ;
   }
   
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 780px) {
     img {
-        width: 20%;
+        width: 100%;
     }
   .grid {
     display: grid;
@@ -50,7 +50,7 @@ h3 {color: #560183}
     }
     
     img {
-    size:auto;
+    size:20%;
     padding-left: 60px;
     padding-right: 60px;
     }
