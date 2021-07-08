@@ -15,7 +15,7 @@ h3 {color: #560183}
   
   @media screen and (min-width: 1000px) {
     img {
-        width: 100%;
+        width: 20%;
     }
   .grid {
     display: grid;
