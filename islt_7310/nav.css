@@ -91,7 +91,7 @@ nav ul li ul li a:hover {
             
             }    
             nav>ul li {    
-                text-align: left;    
+                text-align: center;    
                 font-weight: bold;       
                 float: left;
             }
@@ -100,8 +100,8 @@ nav ul li ul li a:hover {
                 display: inline-block;    
                 border-top: none;    
                 border-bottom: none;    
-                padding: 15px 0px 15px 25px;
-                width: 240px;    
+                padding: 15px 0px 15px 35px;
+                width: 150px;    
                 margin-bottom: 2px;
             }
            
