@@ -38,6 +38,7 @@ nav ul li ul{
 
 nav ul li:hover ul{
     display: block;
+    background-color: black;
    
 }
 
@@ -55,19 +56,14 @@ nav ul li ul li a:hover {
  
         @media only screen and (max-width: 640px) 
         {
-            header {
-                position: relative;        
-                height: 40px;        
-                display: block;        
-                background-color: #fcfcfc;        
-                width: 100%;        
-            }
+             
             #hamburger {
                 display: inline-block;        
                 padding-left: 20px;        
                 width: 26px;        
                 float: left;        
                 font-size: 2em;
+                color:#FCFCFC;
             }
             nav ul, nav:active ul  {
                 display: none;
@@ -89,7 +85,8 @@ nav ul li ul li a:hover {
             nav>ul li {    
                 text-align: left;    
                 font-weight: bold;    
-                color: #560183;    
+                color: #FCFCFC; 
+                background-color: #560183;   
                 float: left;
             }
             nav a {    
@@ -97,7 +94,7 @@ nav ul li ul li a:hover {
                 display: inline-block;    
                 border-top: none;    
                 border-bottom: none;    
-                padding: 15px 0px 15px 35px;    
+                padding: 15px 15px 15px 35px;
                 width: 240px;    
                 margin-bottom: 2px;
             }
@@ -105,6 +102,6 @@ nav ul li ul li a:hover {
                 border-bottom: 3px black;
             }   
             nav ul li ul {       
-                 display:none;    
+                 display:inline-block;    
                 }
                 }
