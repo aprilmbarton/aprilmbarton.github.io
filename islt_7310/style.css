@@ -45,7 +45,7 @@ h3 {color: #560183}
     grid-area: item4;
     justify-self: center;
   }
-  
+}
   @media screen and (min-width: 780px) {
     img {
         width: 100%;
@@ -73,16 +73,5 @@ h3 {color: #560183}
   grid-area: item3;
   justify-self: left;
   }
-  
-  @media screen and (max-width:500px) {
-    .grid {
-      font-size: larger;
-     }
-     
-     img {
-     width:100%;
-     padding-left: 10px;
-     padding-right: 10px;
-     }
-  }
 }
+  
