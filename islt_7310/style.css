@@ -77,8 +77,8 @@ h3 {color: #560183}
         }
     .about {
         grid-area: about;
-        justify-self: left;
-        }
+     
+      }
     p {
         font-size: larger;
         padding: 10px 10px;
