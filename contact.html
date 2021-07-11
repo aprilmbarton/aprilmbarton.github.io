@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <title>Contact</title>
+               <link rel="stylesheet" href="style.css">
+               <link rel="stylesheet" href="nav.css">
+        <style>
+            @media screen and (min-width: 760px) {
+ 
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "item1 item2";
+    }
+.item1 {
+    grid-area: item1;
+   font-size: large;
+   justify-self: left;
+   padding-left: 5px;
+    }
+.item2 {
+    grid-area: item2;
+    font-size: large;
+    justify-self: left;
+
+    }
+
+}
+@media screen and (max-width: 759px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "item1"
+            "item2";
+           }
+
+    .item1 {
+        grid-area: item1;
+        padding:0%;
+        font-size: large;
+        justify-self: center;
+      }
+       
+    .item2{
+        grid-area: item2;
+        padding:0%;
+        font-size: large;
+   justify-self: center;
+
+        }
+          }
+        </style>
+</head>
+<body>
+    <nav>
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="learn.html">Learn</a>
+                <ul id="mobileHide">
+                    <li><a href="#">Goal 1</a></li>
+                    <li><a href="#">Goal 2</a></li>
+                    <li><a href="#">Goal 3</a></li>
+                </ul>
+            </li>
+            <li><a href="resources.html">Resources</a></li>
+            <li class="lastMobile"><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header> <!--I updated the nav on 7/3. Added media query on 7/10.--></header>
+    <h1>Contact Me</h1>
+    <main>
+        <div class="grid">
+            <div class="item1"><p><Strong>April Barton</Strong> <br>
+                                        125 Jesse Hall<br>
+                                        University of Missouri <br>
+                                        Columbia, MO 65211<br></p></div>
+        <div class="item2">
+           <p> <em>Email</em>: <a href="mailto:Amb7kb@umsystem.edu">Amb7kb@umsystem.edu</a><br> 
+            <em>Phone</em>: 573-882-7881 </p>
+            </div>
+            </div>
+
+    </main>
+    <footer>
+        <p>April Barton <br>
+            Amb7kb@umsystem.edu <br>
+            &copy; Copyright 2021 April Barton </p> 
+    
+    </footer>
+</body>
+</html>
