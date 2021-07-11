@@ -5,6 +5,59 @@
                <title>Contact</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
+        <style>
+            @media screen and (min-width: 760px) {
+ 
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "item1 item2";
+    }
+.item1 {
+    grid-area: item1;
+   padding:0%;
+   font-size: large;
+   justify-self: center;
+    }
+.item2 {
+    grid-area: item2;
+    padding:0%;
+    font-size: large;
+    justify-self: center;
+
+    }
+
+}
+@media screen and (max-width: 759px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "item1"
+            "item2";
+           }
+
+    .item1 {
+        grid-area: item1;
+        padding:0%;
+        font-size: large;
+        justify-self: center;
+      }
+       
+    .item2{
+        grid-area: item2;
+        padding:0%;
+        font-size: large;
+   justify-self: center;
+
+        }
+          }
+        </style>
 </head>
 <body>
     <nav>
@@ -23,9 +76,23 @@
             <li class="lastMobile"><a class="active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <header> <!--I updated the nav on 7/3--></header>
+    <header> <!--I updated the nav on 7/3. Added media query on 7/10.--></header>
+    <h1>Contact Me</h1>
     <main>
-    <p></p>
+        <div class="grid">
+            <div class="item1"><p><Strong>April Barton</Strong> <br>
+                                        125 Jesse Hall<br>
+                                        University of Missouri <br>
+                                        Columbia, MO 65211<br></p></div>
+        <div class="item2">
+           <p> <em>Email</em>: Amb7kb@umsystem.edu <br> 
+            <em>Phone</em>: 573-882-7881 </p>
+            </div>
+            </div>
+
+           
+
+    </p>
     </main>
     <footer>
         <p>April Barton <br>
