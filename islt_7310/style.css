@@ -68,7 +68,7 @@ h3 {color: #560183}
      }
     .item2{
         grid-area: item2;
-        justify-self: left;
+       
         }
     .item3 {
         grid-area: item3;
