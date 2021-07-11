@@ -16,7 +16,7 @@ h3 {color: #560183}
   @media screen and (min-width: 760px) {
     img {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .grid {
     display: grid;
@@ -35,12 +35,10 @@ h3 {color: #560183}
     }
 .item2 {
     grid-area: item2;
-    padding-right: 20px;
     }
 .item3 {
     grid-area: item3;
-    padding-left: 20px;
-    padding-right: 20px;
+   justify-self: left;
     }
 .item4 {
     grid-area: item4;
