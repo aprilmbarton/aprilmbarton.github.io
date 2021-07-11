@@ -73,4 +73,8 @@ h3 {color: #560183}
     .item3 {
         grid-area: item3;
            }
+    .item4 {
+      grid-area: item4;
+      justify-self: center;
     }
+          }
