@@ -54,31 +54,21 @@ h3 {color: #560183}
         grid-template-areas: 
             "science welcome"
             "about about";
-        font-size: medium;
-    }
+           }
+
     .science {
         grid-area: science;
         justify-self: left;
-
-    }
-    header {
-        font-size: larger;
-    }
+      }
+       
     img {
         width: 100%;
- 
-    }
+     }
     .welcome {
         grid-area: welcome;
         justify-self: left;
         }
     .about {
         grid-area: about;
-     
-      }
-    p {
-        font-size: larger;
-        padding: 10px 10px;
+           }
     }
-
-}
