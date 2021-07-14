@@ -98,26 +98,62 @@ h4 {color: #560183}
       padding-left: 10px;
     }
           }
-    @media print {
-        *{
-            background:transparent !important;
-            color: #000 !important;
-            box-shadow: none !important;
-            text-shadow: none !important;
-        }
-        .main-nav,
-        .img {
-            display: none;
-        }
-        @page {
-            margin: 1in;
-        }
-        h2, ul {
-            page-break-after: avoid;
-        }
-        p { 
-            orphans: 3;
-            widows: 3;
-            font-size: 12pt;
-        }
-    }
+          @media print {
+
+            /* HIDE UNWANTED ELEMENTS */
+            nav,
+            .item3,
+            .item4,
+            img {
+              display: none;
+            }
+       
+            /* GLOBAL RESET */
+            body {
+              font-family: Georgia, serif;
+              font-size: 12pt;
+              line-height: 20pt;
+              background: none;
+              color: #000;
+            }
+       
+       
+            /* LAYOUT RESET */
+            .final-result,
+            .info,
+            section,
+            footer {
+              background: none;
+              width: 100%;
+              border: none;
+              padding: 0;
+              margin: 0;
+              color: #000;
+            }
+       
+            section:first-child::before {
+              border: none;
+            }
+       
+            /* SPECIFICS */
+            h1,h2,h3,h4,h5,h6 {
+              color: #000;
+              font-size: 24pt;
+              line-height: 30pt;
+              margin: 0;
+            }
+       
+                    
+    
+       
+            footer a:link,
+            footer a:visited {
+              color: #000;
+              background: none;
+              padding: 0;
+            }
+            @page {
+                margin: 1in;
+            }
+    
+          }
