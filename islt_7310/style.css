@@ -154,11 +154,11 @@ h4 {color: #560183}
             }
     
           }
-          .box{
+          .box {
             width: 100%;
-            height: 100%px;
+            height: 100%;
             background-image: url(purple.jpg);
             padding: 0;
             margin: 0;
             background-size: cover;
-                }​
+          }
