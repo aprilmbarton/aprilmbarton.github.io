@@ -8,6 +8,16 @@ header {
 
 h3 {color: #560183}
 h4 {color: #560183}
+
+@font-face { 
+
+    font-family: ultraregular; 
+    
+    src: url(ultraregular.ttf); 
+    
+    }
+    blockquote {font-family: ultraregular, serif; }
+
 .hangingindent {
     padding-left: 40px ;
     text-indent: -22px ;
@@ -88,3 +98,26 @@ h4 {color: #560183}
       padding-left: 10px;
     }
           }
+    @media print {
+        *{
+            background:transparent !important;
+            color: #000 !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        .main-nav,
+        .img {
+            display: none;
+        }
+        @page {
+            margin: 1in;
+        }
+        h2, ul {
+            page-break-after: avoid;
+        }
+        p { 
+            orphans: 3;
+            widows: 3;
+            font-size: 12pt;
+        }
+    }
