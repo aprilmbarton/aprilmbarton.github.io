@@ -8,29 +8,124 @@
             <style>
           .zoom
           {width: 1.5%;}
-          img {
-                width: 35%;
-               }
-               #femalescience {
-                text-align: center;
-               }
-               div {
-                   padding-left: 20px;
-                   padding-right: 20px;
-               }
-               @media screen and (max: width 500px) {
-                img {
-                width: 100%;
-               }
-               #science {
-                text-align: center;
-               }
-               div {
-                   padding-left: 20px;
-                   padding-right: 20px;
-                   font-size: larger;
-               }
-               }
+          @media screen and (min-width: 760px) {
+    img {
+        max-width: 100%;
+        text-align: left;
+    }
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sec1 sec2"
+        "sec3 sec4"
+        "sec5 sec5"
+        "sec6 sec7"
+        "sec8 sec8";
+    }
+.sec1 {
+    grid-area: sec1;
+    padding-top: 20px;
+    padding-left: 10px;
+   
+    }
+.sec2 {
+    grid-area: sec2;
+    padding-top: 0;
+    padding-left: 10px;
+    }
+.sec3 {
+    grid-area: sec3;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec4 {
+    grid-area: sec4;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec5 {
+    grid-area: sec5;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec6 {
+    grid-area: sec6;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec7 {
+    grid-area: sec7;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec8 {
+    grid-area: sec8;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+}
+@media screen and (max-width: 759px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "sec1"
+            "sec2"
+            "sec3"
+            "sec4"
+            "sec5"
+            "sec6"
+            "sec7"
+            "sec8";
+           }
+
+    .sec1 {
+        grid-area: sec1;
+        justify-self: center;
+        padding-left: 10px;
+      }
+       
+    img {
+        max-width: 100%;
+        padding-left: 10px;
+     }
+    .sec2{
+        grid-area: sec2;
+        padding-left: 10px;
+       
+        }
+    .sec3 {
+        grid-area: sec3;
+        justify-self: center;
+        padding-left: 10px;
+      }
+    .sec4{
+        grid-area: sec4;
+        padding-left: 10px;
+    }
+    .sec5{
+        grid-area: sec5;
+        padding-left: 10px;
+        }
+    .sec6 {
+        grid-area: sec6;
+        justify-self: center;
+        padding-left: 10px;
+            }
+    .sec7{
+        grid-area: sec7;
+        padding-left: 10px;
+        }
+    .sec8{
+        grid-area: sec8;
+        padding-left: 10px;
+        }
+        }
 
 
             </style>
@@ -57,15 +152,83 @@
         <h1>Learn Page</h1>
     </header>
     <main>
-        <div>
-            <div id="femalescience"><img src="femalescience.jpg"  width="100" height="300" alt="female scientist"></div>
-             <div>
-                 <h3>Goals</h3>
-        <p> <a href="goal1.html"><em>Goal 1</em></a>: Define the parts of the Experimental Design. </p>
-       <p> <a href="goal2.html"><em>Goal 2</em></a>: Apply Experimental Design knowledge to an experiment to identify the parts of the experimental design. </p>
-        <p><a href="goal3.html"><em>Goal 3</em></a>: Graph the data from an experimental design experiment.</p> </div>
-        </div>
+        <div class="grid">
+           
 
+
+<div class="sec1"><img src="experiment.jpg"  width="300" height="225" alt="experiment"></div>
+              
+<div class="sec2"> <h3>Goal 1: Define the parts of the Experimental Design.</h3><p> Scientific experiments allow scientists to test hypotheses and find out how something happens. Watch this <a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/v/introduction-to-experimental-design">video</a> for more information. </p>
+    <li class="hangingindent">The independent variable in an experiment is a condition that is manipulated or changed by a scientist. 
+    There should only be one independent variable in an experiment. This makes sure only one thing is affecting the experiment. </li>
+    <li class="hangingindent">The dependent variable is observed and measured during an experiment. It responds to the independent variable.</li> 
+    <li class="hangingindent">The conditions that do not change during an experiment are known as constants.</li> 
+    <li class="hangingindent">An experimental group is the group that receives the change. </li>
+    <li class="hangingindent">The control group does not receive the change. A control group is used to compare the results of the experimental groups. </li>
+    <li class="hangingindent">The hypothesis is what you think will happen in the experiment. When writing a hypothesis, you use the following format:  
+    If independent variable, then dependent variable. You explain what you are doing to the independent variable and tell what you think will happen to the dependent variable as a result of what you did to the independent variable. </li>
+    <li class="hangingindent">Multiple trials are used to increase the reliability of results.</li>
+
+    <p>Read this <a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/a/experiments-and-observations">article</a> for more information.  
+    </p></div>
+   
+        
+    <div class="sec3"> <img src="plant.jpg"  width="300" height="225" alt="plant"></div> 
+        
+    <div class="sec4">  
+        <h3>Goal 2: Apply Experimental Design knowledge to an experiment to identify the parts of the experimental design.</h3>
+        <p>Here is an example of an experiment.  A scientist wanted to know if fertilizer affected plant growth.  
+               He had 4 of the same plants.  Each plant was in the same pot.  Each plant had the same amount of soil, water, and sunlight daily.  
+               He labeled the plants A, B, C, and D.  Plant A was given 5 grams of fertilizer.   Plant B was given 10 grams of fertilizer.   
+               Plant C was given 15 grams of fertilizer.   Plant D did not have any fertilizer.  He measured the plants for 30 days.  
+               He recorded his data each day.</p></div>  
+   
+    <div class="sec5">
+        <li class="hangingindent">The independent variable would be the amount of fertilizer. </li> 
+        <li class="hangingindent">The dependent variable would be the plant growth.</li> 
+        <li class="hangingindent">The constants would be the amount of water, soil, and sunlight.  The same type of plants is another type of constant.</li>
+        <li class="hangingindent"> The experimental group is plant A, B, and C. </li>
+        <li class="hangingindent">The control group is plant D. </li>
+        <li class="hangingindent">Example Hypothesis:  If the plant receives 15 grams of fertilizer then it will grow tallest.   </li>
+        <p> Watch this <a href="https://www.youtube.com/watch?v=D3ZB2RTylR4">video</a> for more information.  </p>
+    </div>
+
+       
+        <div class="sec6"> <img src="graph.jpg"  width="300" height="225" alt="experiment"></div>
+
+        <div class="sec7">        <h3>Goal 3: Graph the data from an experimental design experiment.</h3>    
+            <p>A graph is a pictorial representation of data used to show a relationship between two or more factors. 
+                Regardless of the type of graph used to display data, all graphs need to have the following properties:</p>
+                    <li class="hangingindent"> a descriptive title, such as: The Effect of Independent Variable on Dependent Variable.</li> 
+                   <li class="hangingindent">labels and appropriate units of measurement</li> 
+                    <li class="hangingindent">legend or key if needed</li>
+                    <li class="hangingindent">equal spacing on the numbering scale</li> 
+                    <li class="hangingindent">use of the entire graphing area </li></div>
+
+                       
+               <div class="sec8"><h4>Line, Bar and Pie Graphs </h4> 
+                <p>A line graph has one or more lines connecting a series of data points.</p>
+                <li class="hangingindent"> A line graph is often the best choice for showing how an independent variable is related to a dependent variable.
+                </li>
+                <li class="hangingindent">The independent variable is graphed on the x-axis and the dependent variable is graphed on the y-axis.
+                </li>
+                <li class="hangingindent">Multiple lines can be drawn to represent multiple data sets; a key must be included for this situation.
+                </li>
+             <p>A bar graph uses a series of columns, or bars, to display data.</p>
+                <li class="hangingindent"> A bar graph is useful when the data is not continuous but categorical.
+                </li>
+                <li class="hangingindent">A numerical scale is used to determine the lengths of the bars.
+                </li>
+                <li class="hangingindent">Lengths of bars are used to represent and compare data.
+                </li>
+               <p>A pie chart is used to represent the parts of a whole. </p>
+                <li class="hangingindent">A pie chart is also known as a circle graph.
+                </li>
+                <li class="hangingindent">Each section of a pie chart represents the frequency of each category’s occurrence.
+                </li>
+                 </div>          
+
+</div>
 
     </main>
     <footer>
