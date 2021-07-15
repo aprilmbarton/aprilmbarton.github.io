@@ -162,3 +162,6 @@ h4 {color: #560183}
             margin: 0;
             background-size: cover;
           }
+          .zoom:hover {
+            transform: scale(1.5);
+          }
