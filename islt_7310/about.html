@@ -6,6 +6,24 @@
     <title>About Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <style>
+        .item4 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+        .responsive-iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+        </style>
 </head>
 <body>
     <nav>
@@ -29,7 +47,7 @@
     </header>
     <main>     
         <div class="grid">
-            <div class="item1"><img src="aprilbartonwebsitepicture.jpg"  width="170" height="300" alt="April Barton"> </div>
+            <div class="item1"><img src="aprilbartonwebsitepicture.jpg"  width="200" height="300" alt="April Barton"></div>
             <div class="item2"><h3>About Me</h3>
                 <p>Hi everyone, I am <em>April Barton</em>. I teach biology and anatomy. 
                     I live in <em>Kansas City, Missouri</em>. I am married with two daughters.  
@@ -50,7 +68,7 @@
                     </ul>
                     <blockquote>“She believed she could, so she did.”  R.S. Grey</blockquote></div>
             <div class="item3"> <a href="bartonresume.pdf">Resume</a></div>
-            <div class="item4"><iframe width="560" height="315" src="https://www.youtube.com/embed/O8v3yKYdXzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="item4"><iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/O8v3yKYdXzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
           </div>       
     </main>
     <footer>
