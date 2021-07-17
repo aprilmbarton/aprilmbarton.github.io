@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+               <title>Resources</title>
+               <link rel="stylesheet" href="style.css">
+               <link rel="stylesheet" href="nav.css">
+               <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+               <style>
+                table.learntable {
+                  width: 50%;
+                  background-color: #ffffff;
+                  border-collapse: collapse;
+                  border-width: 2px;
+                  border-color: black;
+                  border-style: solid;
+                  color: black;
+                }
+                  table a,
+                table a:link,
+                table a:visited {
+                 color: #FF69B4;
+
+                    }
+                table tr:nth-of-type(2) {background: white; color:black;}
+                table tr:nth-of-type(3) {background: white; color:black;}
+                table tr:nth-of-type(4) {background: #560183; color: white; }
+                table.learntable td, table.learntable th {
+                  border-width: 2px;
+                  border-color:black;
+                  border-style: solid;
+                  padding: 3px;
+                }
+                table.learntable thead {
+                  background-color: #560183;
+                  color: white;
+                }
+    @media screen and (min-width: 760px) {
+  
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "area1"
+        "area2";
+    }
+.area1 {
+    grid-area: area1;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+       }
+.area2 {
+    grid-area: area2;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+}
+@media screen and (max-width: 759px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "area1"
+            "area2";
+           }
+
+    .area1 {
+        grid-area: area1;
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+    .area2{
+        grid-area: area2;
+        justify-self: center;
+        padding-left: 10px;
+               }
+        }
+           </style>
+                
+</head>
+<body>
+    <nav>
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="learn.html">Learn</a>
+                <ul id="mobileHide">
+                    <li><a href="goal1.html">Goal 1</a></li>
+                    <li><a href="goal2.html">Goal 2</a></li>
+                    <li><a href="goal3.html">Goal 3</a></li>
+                </ul>
+            </li>
+            <li><a class="active" href="resources.html">Resources</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header> <h1> Site Resources</h1>
+  <!--This is my updated resources. I upated it on 7/5 after it was graded-->
+    </header>
+    <main>
+        <div class="grid">           
+            <div class="area1">
+        <h3>APA Format</h3>
+        <p class="hangingindent">Amoeba Sisters. (2019, June 6). <em>Nature of Science. </em>https://www.youtube.com/watch?v=3nAETHZTObk.</p>
+        <p class="hangingindent">Barton, A. (2018). <em>How to Make a Line Graph Image. </em></p>
+        <p class="hangingindent">Khan Academy. (n.d.).  <em>Controlled experiments (article). </em>Khan Academy. 
+                    https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/a/experiments-and-observations.</p>
+        <p class="hangingindent">Khan Academy. (n.d.). <em>Introduction to experimental design (video).</em> Khan Academy.
+                    https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/v/introduction-to-experimental-design. </p>
+        <p class="hangingindent">Nucleus Medical Media. (2016, April 5). <em>Biology: Controlled Experiments.</em> YouTube. https://www.youtube.com/watch?v=D3ZB2RTylR4. </p>
+        </div>
+                  
+            <div class="area2">
+                <h3>Resoure Table</h3>
+        <table class="learntable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amoeba Sisters: Nature of Science</td>
+                <td><a href="https://www.youtube.com/watch?v=3nAETHZTObk">Video</a></td>
+              </tr>
+              <tr>
+                <td>Khan Academy: Controlled Experiments</td>
+                <td><a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/a/experiments-and-observations">Article</a></td>
+              </tr>
+              <tr>
+                <td>Khan Academy: Introduction to Experimental Design</td>
+                <td><a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/v/introduction-to-experimental-design">Video</a></td>
+              </tr>
+              <tr>
+                <td>Nucleus Medical Media: Controlled Experiments</td>
+                <td><a href="https://www.youtube.com/watch?v=D3ZB2RTylR4">Video</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="box">
+            <p> April Barton <br>
+                <img class="zoom" src="email.png"  width="20" height="20" alt="email Icon"> Amb7kb@umsystem.edu <br>
+                <img class="zoom" src="phone.png"  width="20" height="20" alt="email Icon"> 1+888-888-8888<br>
+                &copy; Copyright 2021 April Barton
+            </p>    
+            
+            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+    </footer>
+</body>
+</html>
