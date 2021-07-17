@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+               <title>Learn</title>
+               <link rel="stylesheet" href="style.css">
+               <link rel="stylesheet" href="nav.css">
+               <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+            <style>
+    .zoom
+    {width: 1.5%;
+    }
+    @media screen and (min-width: 760px) {
+    img {
+        max-width: 100%;
+        text-align: left;
+    }
+    .hangingindent {
+    padding-left: 40px ;
+    text-indent: -22px ;
+  }
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sec1 sec1"
+        "sec2 sec3"
+        "sec4 sec5"
+        "sec6 sec6"
+        "sec7 sec8"
+        "sec9 sec9";
+    }
+.sec1 {
+    grid-area: sec1;
+    padding-top: 0;
+    padding-left: 10px;
+   
+    }
+.sec2 {
+    grid-area: sec2;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec3 {
+    grid-area: sec3;
+    padding-top: 0;
+    padding-left: 10px;
+    }
+.sec4 {
+    grid-area: sec4;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec5 {
+    grid-area: sec5;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec6 {
+    grid-area: sec6;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec7 {
+    grid-area: sec7;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.sec8 {
+    grid-area: sec8;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+    .sec9 {
+    grid-area: sec9;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+}
+@media screen and (max-width: 759px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "sec1"
+            "sec2"
+            "sec3"
+            "sec4"
+            "sec5"
+            "sec6"
+            "sec7"
+            "sec8"
+            "sec9";
+           }
+
+    .sec1 {
+        grid-area: sec1;
+        padding-left: 10px;
+      }
+       
+    img {
+        max-width: 100%;
+        padding-left: 10px;
+     }
+    .sec2{
+        grid-area: sec2;
+        justify-self: center;
+        padding-left: 10px;
+       
+        }
+    .sec3 {
+        grid-area: sec3;
+        padding-left: 10px;
+      }
+    .sec4{
+        grid-area: sec4;
+        justify-self: center;
+        padding-left: 10px;
+    }
+    .sec5{
+        grid-area: sec5;
+        padding-left: 10px;
+        }
+    .sec6 {
+        grid-area: sec6;
+        padding-left: 10px;
+            }
+    .sec7{
+        grid-area: sec7;
+        justify-self: center;
+        padding-left: 10px;
+        }
+    .sec8{
+        grid-area: sec8;
+        padding-left: 10px;
+        }
+        .sec9{
+        grid-area: sec9;
+        padding-left: 10px;
+        }
+        }
+</style>
+</head>
+<body>
+    <nav>
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="learn.html">Learn</a>
+                <ul id="mobileHide">
+                    <li><a href="goal1.html">Goal 1</a></li>
+                    <li><a href="goal2.html">Goal 2</a></li>
+                    <li><a href="goal3.html">Goal 3</a></li>
+                </ul>
+            </li>
+            <li><a href="resources.html">Resources</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!--I updated the nav on 7/3 and 7/11.  Added media query on 7/10. 7/11 adding content. -->
+        <h1>Learn Page</h1>
+    </header>
+    <main>
+        <div class="grid">           
+            <div class="sec1">
+                <h3>Goals</h3>
+                <p><a href="#goal1">Goal 1</a>: Define the parts of the Experimental Design.</p>
+                <p><a href="#goal2">Goal 2</a>: Apply Experimental Design knowledge to an experiment to identify the parts of the experimental design.</p>
+                <p><a href="#goal3">Goal 3</a>: Graph the data from an experimental design experiment.</p>
+            </div>
+
+<div class="sec2"><img src="experiment.jpg"  width="300" height="225" alt="experiment"></div>
+              
+<div class="sec3"><a id="goal1"><h3>Goal 1: Define the parts of the Experimental Design.</h3></a>
+    <p> Scientific experiments allow scientists to test hypotheses and find out how something happens.
+        Watch this <a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/v/introduction-to-experimental-design">video</a> for more information. </p>
+    <ul>
+        <li>The independent variable in an experiment is a condition that is manipulated or changed by a scientist. 
+    There should only be one independent variable in an experiment. This makes sure only one thing is affecting the experiment. </li>
+    <li>The dependent variable is observed and measured during an experiment. It responds to the independent variable.</li> 
+    <li>The conditions that do not change during an experiment are known as constants.</li> 
+    <li>An experimental group is the group that receives the change. </li>
+    <li>The control group does not receive the change. A control group is used to compare the results of the experimental groups. </li>
+    <li>The hypothesis is what you think will happen in the experiment. When writing a hypothesis, you use the following format:  
+    If independent variable, then dependent variable. You explain what you are doing to the independent variable and tell what you think will happen to the dependent variable as a result of what you did to the independent variable. </li>
+    <li>Multiple trials are used to increase the reliability of results.</li>
+</ul>
+    <p>Read this <a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/a/experiments-and-observations">article</a> for more information.  
+    </p></div>
+   
+        
+    <div class="sec4"> <img src="plant.jpg"  width="300" height="225" alt="plant"></div> 
+        
+    <div class="sec5">  <a id="goal2">
+        <h3>Goal 2: Apply Experimental Design knowledge to an experiment to identify the parts of the experimental design.</h3></a>
+        <p>Here is an example of an experiment.  A scientist wanted to know if fertilizer affected plant growth.  
+               He had 4 of the same plants.  Each plant was in the same pot.  Each plant had the same amount of soil, water, and sunlight daily.  
+               He labeled the plants A, B, C, and D.  Plant A was given 5 grams of fertilizer.   Plant B was given 10 grams of fertilizer.   
+               Plant C was given 15 grams of fertilizer.   Plant D did not have any fertilizer.  He measured the plants for 30 days.  
+               He recorded his data each day.</p></div>  
+   
+    <div class="sec6">
+        <ul>
+        <li>The independent variable would be the amount of fertilizer. </li> 
+        <li>The dependent variable would be the plant growth.</li> 
+        <li>The constants would be the amount of water, soil, and sunlight.  The same type of plants is another type of constant.</li>
+        <li>The experimental group is plant A, B, and C. </li>
+        <li>The control group is plant D. </li>
+        <li>Example Hypothesis:  If the plant receives 15 grams of fertilizer then it will grow tallest.   </li>
+    </ul>
+        <p> Watch this <a href="https://www.youtube.com/watch?v=D3ZB2RTylR4">video</a> for more information.  </p>
+    </div>
+       
+        <div class="sec7"> <img src="graph.jpg"  width="300" height="225" alt="experiment"></div>
+
+        <div class="sec8"><a id="goal3"><h3>Goal 3: Graph the data from an experimental design experiment.</h3></a>
+            <p>A graph is a pictorial representation of data used to show a relationship between two or more factors. 
+                Regardless of the type of graph used to display data, all graphs need to have the following properties:</p>
+                  <ul>  
+                    <li>a descriptive title, such as: The Effect of Independent Variable on Dependent Variable.</li> 
+                   <li>labels and appropriate units of measurement</li> 
+                    <li>legend or key if needed</li>
+                    <li>equal spacing on the numbering scale</li> 
+                    <li>use of the entire graphing area </li>
+                </ul>
+            </div>
+
+                       
+               <div class="sec9"><h4>Line, Bar and Pie Graphs </h4> 
+                <p>A line graph has one or more lines connecting a series of data points.</p>
+                <ul>
+                <li>A line graph is often the best choice for showing how an independent variable is related to a dependent variable.</li>
+                <li>The independent variable is graphed on the x-axis and the dependent variable is graphed on the y-axis.</li>
+                <li>Multiple lines can be drawn to represent multiple data sets; a key must be included for this situation.</li>
+            </ul>
+             <p>A bar graph uses a series of columns, or bars, to display data.</p>
+             <ul>
+                <li> A bar graph is useful when the data is not continuous but categorical.</li>
+                <li>A numerical scale is used to determine the lengths of the bars.</li>
+                <li>Lengths of bars are used to represent and compare data.</li>
+            </ul>
+               <p>A pie chart is used to represent the parts of a whole. </p>
+               <ul>
+                <li>A pie chart is also known as a circle graph.</li>
+                <li>Each section of a pie chart represents the frequency of each category’s occurrence.</li>
+            </ul>
+                 </div>          
+                </div>
+
+
+    </main>
+    <footer>
+   <div class="box">
+    <p> April Barton <br>
+        <img class="zoom" src="email.png"  width="20" height="20" alt="email Icon"> Amb7kb@umsystem.edu <br>
+        <img class="zoom" src="phone.png"  width="20" height="20" alt="Phone Icon"> 1+888-888-8888<br>
+        &copy; Copyright 2021 April Barton
+    </p>    
+    <p><a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> </p>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
+    </footer>
+</body>
+</html>

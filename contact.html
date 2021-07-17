@@ -2,11 +2,14 @@
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
                <title>Contact</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
+               <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <style>
-            @media screen and (min-width: 760px) {
+          
+    @media screen and (min-width: 760px) {
  
     .grid {
     display: grid;
@@ -56,6 +59,89 @@
 
         }
           }
+fieldset{
+width: 45%;
+margin-top: 1em;
+margin-bottom: 1em;
+padding-top: 1em;
+border-color:#560183;
+border-width: 3px;
+}
+#comments{
+    width:15.5em; 
+    height:100px;
+    margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+}
+    legend{
+    
+font-weight: bold;
+    color:#560183;
+    margin-bottom: 2em;
+}
+
+label {
+    float: left;
+    width: 10em;
+    text-align: right;
+}
+
+    input, select {
+        width:15em;
+        height:2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        
+    }
+
+   input:required, input[required] {
+       border: 1px solid #560183;
+          }
+
+          input:valid {
+              border: 1px solid 560183;
+                        }
+input:invalid{
+    box-shadow: none;
+}
+
+textarea:required, textarea[required] {
+    border: 1px solid #560183;
+       }
+
+       textarea:valid {
+           border: 1px solid #560183;
+                     }
+textarea:invalid{
+ box-shadow: none;
+}
+
+
+    .but{
+       
+        font-weight:bold;
+       background-color:#560183;
+        color:white;
+       width: 15em;
+       margin-left: 210px;
+       border-color:#560183;
+    }
+br {clear:both;}
+
+@media screen and (max-width:1550px) { 
+    label {
+        float: left;
+        width: 10em;
+        text-align: left;
+    }
+
+    .but {
+margin-left: 10px;
+}
+
+}
         </style>
 </head>
 <body>
@@ -66,9 +152,9 @@
             <li><a href="about.html">About</a></li>
             <li><a href="learn.html">Learn</a>
                 <ul id="mobileHide">
-                    <li><a href="#">Goal 1</a></li>
-                    <li><a href="#">Goal 2</a></li>
-                    <li><a href="#">Goal 3</a></li>
+                    <li><a href="goal1.html">Goal 1</a></li>
+                    <li><a href="goal2.html">Goal 2</a></li>
+                    <li><a href="goal3.html">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="resources.html">Resources</a></li>
@@ -82,18 +168,44 @@
             <div class="item1"><p><Strong>April Barton</Strong> <br>
                                         125 Jesse Hall<br>
                                         University of Missouri <br>
-                                        Columbia, MO 65211<br></p></div>
+                                        Columbia, MO 65211<br></p>
+                                      <p> <em>Email</em>: <a href="mailto:Amb7kb@umsystem.edu">Amb7kb@umsystem.edu</a><br> 
+            <em>Phone</em>: 573-882-7881 </p></div>
         <div class="item2">
-           <p> <em>Email</em>: <a href="mailto:Amb7kb@umsystem.edu">Amb7kb@umsystem.edu</a><br> 
-            <em>Phone</em>: 573-882-7881 </p>
-            </div>
-            </div>
+         
+        <p>Fill in the form for easy contact.</p>
+        <form id="formid" action="mailto:amb7kb@umsystem.edu?Subject=Educational%20Website%20Contact" method="post" enctype="text/plain">
+            <fieldset>
+            <label for="first">First Name:</label>
+            <input type="text" name="First Name" autofocus required placeholder="First Name">  
+            <br>
+            <label for="Last">Last Name:</label>
+            <input type="text" name="Last Name" required placeholder="Last Name">  
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" name="Email" required placeholder="Email">
+            <br>
+            <label for="Message">Message:</label>
+              
+            <textarea id="comments" name="Comments" placeholder="Your Message Here." required></textarea> 
+            <br>
+            <input class="but" type="submit" value="Submit"> <br>
+           
+        </fieldset>
+    </form>
+        </div>
+        </div>
 
     </main>
     <footer>
-        <p>April Barton <br>
-            Amb7kb@umsystem.edu <br>
-            &copy; Copyright 2021 April Barton </p> 
+        <div class="box">
+            <p> April Barton <br>
+                <img class="zoom" src="email.png"  width="20" height="20" alt="email Icon"> Amb7kb@umsystem.edu <br>
+                <img class="zoom" src="phone.png"  width="20" height="20" alt="Phone Icon"> 1+888-888-8888<br>
+                &copy; Copyright 2021 April Barton
+            </p>    
+            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
     
     </footer>
 </body>
