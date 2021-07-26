@@ -17,7 +17,7 @@
     grid-template-columns: 30% 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "item1 item1";
+        "item1 item2";
     }
 .item1 {
     grid-area: item1;
@@ -25,7 +25,11 @@
    justify-self: center;
    padding-left: 5px;
     }
-
+    .item2 {
+    grid-area: item2;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
 
 }
 @media screen and (max-width: 759px) {
@@ -35,7 +39,8 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-            "item1";
+            "item1"
+            "item2";
            }
 
     .item1 {
@@ -44,8 +49,12 @@
         font-size: large;
         justify-self: center;
       }
-       
- 
+      .item2 {
+      grid-area: item1;
+        justify-content: center;
+      
+        padding-left: 10px;
+      }
           }
 fieldset{
 width: 45%;
@@ -177,6 +186,7 @@ margin-left: 10px;
         </fieldset>
     </form>
         </div>
+        <div class="item2"><img src="contactpic.jpg"  width="600" height="auto" alt="April Barton"></div>
         </div>
 
     </main>
